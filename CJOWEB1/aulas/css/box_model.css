@@ -1,0 +1,33 @@
+body{
+    background-color: #f0f0f0;
+}
+h1{
+   /* margin-top: 50px;
+    margin-right: 40px;
+    margin-bottom: 60px;
+    margin-left: 30px;*/
+    /*margin: 50px 40px 60px 30px;*/
+    margin: 50px 80px;
+    border: 5px solid #9016b6;
+    padding-top: 20px;
+    padding-right: 30px;
+    padding-bottom: 20px;   
+    padding-left: 30px;
+
+    border-radius: 20px;
+    max-width: 400px;
+}
+p{
+    border-top: 1px solid #9016b6;
+    border-right: 2px dotted #16b653;
+    border-bottom: 3px dashed #b61616;
+    border-left: 4px double #b65e16;
+}
+a {
+    display:block;
+}
+div{
+    width: 100px;
+    height: 100px;
+    border: 1px solid #8f8827;
+}
