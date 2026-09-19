@@ -1,0 +1,21 @@
+body{
+    height: 100vh;
+    /*background-image: #aaf1b0;*/
+    background-image: url("../imagens/b.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+h1{
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+p{
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+}

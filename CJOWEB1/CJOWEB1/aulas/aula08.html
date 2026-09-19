@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" >
+        <fieldset>
+            <legend>Estado civil</legend>
+            <p>
+                <input type="radio" id="solteiro" name="estado_civil" value="solteiro" required>
+                <label for="solteiro">Solteiro</label>
+            </p>
+            <p>
+                <input type="radio" id="casado" name="estado_civil" value="casado">
+                <label for="casado">Casado</label>
+            </p>
+            <p>
+                <input type="radio" id="divorciado" name="estado_civil" value="divorciado">
+                <label for="divorciado">Divorciado</label>
+            </p>
+            <p>
+                <input type="radio" id="viuvo" name="estado_civil" value="viuvo">
+                <label for="viuvo">Viuvo</label>
+            </p>
+        </fieldset>
+        <hr>
+        <fieldset>
+            <legend>Equipamentos</legend> 
+
+                <p>
+                    <input type="checkbox" id="Monitor" name="equipamentos" value="Monitor">
+                    <label for="Monitor">Monitor</label>
+                </p>
+                <p>
+                    <input type="checkbox" id="Impressora" name="equipamentos" value="Impressora">
+                    <label for="Impressora">Impressora</label>
+                </p>
+           </fieldset>
+
+           <label for="busca">Buscar:</label>
+           <input type="search" id="busca" name="busca" placeholder="Digite sua busca" >
+             
+            <p>
+                <label for="cor">Escolher cor:</label>
+                <input for="cor" type="color" id="cor" name="cor" value="#ff0000">
+            </p> 
+            <p>
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="5" cols="30"></textarea>
+            </p>   
+            <p>
+                <label for="estado">Estado:</label>
+                <select id="estado" name="estado">
+                    <option value="0" disabled selected>Selecione um estado</option>
+                    <option value="ES">Espírito Santo</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="SP">São Paulo</option>
+                </select>           
+                <p>
+                    <label for="meios_transporte">Meios de transporte:</label>
+                    <select id="meios_transporte" name="meios_transporte">
+                        <optgroup label="Carros">
+                            <option value="fusca">Fusca</option>
+                            <option value="gol">Gol</option>
+                            <option value="uno">Uno</option>
+                        </optgroup>
+                        <optgroup label="Motos">
+                            <option value="honda">Honda</option>
+                            <option value="yamaha">Yamaha</option>
+                        </optgroup>
+                        <optgroup label="Ônibus">
+                            <option value="scania">Scania</option>
+                            <option value="volvo">Volvo</option>
+                        </optgroup>
+                    </select>
+                </p>       
+            </p>
+        </fieldset>
+        <p>
+                <input type="submit" value="Enviar Dados">
+        </p> 
+    </form>
+    <hr>
+    <details>
+        <summary>Exibir/Ocultar</summary>
+        <p>lore ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </details>
+</body>
+</html>

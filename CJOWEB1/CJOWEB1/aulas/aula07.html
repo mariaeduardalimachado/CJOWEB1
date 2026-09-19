@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="post">
+        <p>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" size="30" maxlength="30" required >
+           
+        </p>
+         <p>
+            <label for="sobrenome">Sobrenome:</label>
+            <input type="text" id="sobrenome" name="sobrenome">
+           
+        </p> 
+        <p>
+            <label for="telefone">Telefone:</label>
+            <input type="text" id="telefone" name="telefone" size="15" maxlength="15" placeholder="(00) 00000-0000" required>
+           
+        </p>  
+        <p>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="seu.email@exemplo.com">
+        </p>   
+        <p>
+            <label for="url">URL:</label>
+            <input type="url" id="url" name="url" size="30" maxlength="30" placeholder="https://www.exemplo.com" required>
+        </p>   
+        <p>
+            <label for="nota">Nota:</label>
+            <input type="number" id="nota" name="nota" min="0" max="10" step="2" placeholder="0.0" required>
+        </p>   
+        <p>
+            <label for="range">Range:</label>
+            <input type="range" id="range" name="range" min="0" max="10" step="2" placeholder="0.0" required>
+        </p>   
+        <p>
+            <label for="data">Data:</label>
+            <input type="date" id="data" name="data" required min="2026-01-01" max="2026-12-31">
+        </p>   
+        <p>
+            <label for="mes">Mês:</label>
+            <input type="month" id="mes" name="mes" required>
+        </p>   
+        <p>
+            <label for="week">Semana:</label>
+            <input type="week" id="week" name="week" required>
+        </p>   
+        <p>
+            <label for="time">Horas:</label>
+            <input type="time" id="time" name="time" required min="09:00" max="18:00" step="60">
+        </p>   
+        <p>
+            <label for="datetime-local">Data Hora:</label>
+            <input type="datetime-local" id="datetime-local" name="datetime-local" required>
+        </p>
+        <p>
+            <label for="hidden">Hidden:</label>
+            <input type="hidden" id="hidden" name="hidden" value="valor">
+        </p>  
+        <p>
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha" required>
+        </p>
+        <p>
+            <label for="arquivo">Arquivo:</label>
+            <input type="file" id="arquivo" name="arquivo" required>
+        </p>
+        <p>
+            <input type='submit' value='Enviar Dados'>
+            <button type='reset' onclick="mensagem()">Executar Função</button>
+            <button type='reset' onclick="mensagem()">Limpar Campos</button>
+            <input type='button' value='Executar Função' onclick="mensagem()">
+            <input type='image' src='imagens/botao.png' width="35" height="35" alt='Executar Função' onclick="mensagem()">
+        </p>
+
+    </form>
+    <script>
+        function mensagem() {
+            alert("Boa noite!");
+        }
+    </script>
+</body>
+</html>

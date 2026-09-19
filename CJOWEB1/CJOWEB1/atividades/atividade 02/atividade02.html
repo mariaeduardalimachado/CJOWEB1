@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Realize seu cadastro abaixo:</h1>
+    <hr>
+    <p>Garanta que seus dados estejam corretos antes de enviar:</p>
+    <form action="" method="get">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required><br><br>
+
+        <label for="data_nascimento">Data de Nascimento:</label>
+        <input type="date" id="data_nascimento" name="data_nascimento" required><br><br>
+
+        <label for="genero">Gênero:</label>
+        <select id="genero" name="genero" required>
+            <option value="">Selecione</option>
+            <option value="masculino">Masculino</option>
+            <option value="feminino">Feminino</option>
+            <option value="outro">Outro</option>
+        </select><br><br>
+
+        <label for="endereco">Endereço:</label>
+        <input type="text" id="endereco" name="endereco" required><br><br>
+
+        <label for="estado">Estado:</label>
+        <select id="estado" name="estado" required>
+            <option value="">Selecione</option>
+            <option value="sp">São Paulo</option>
+            <option value="rj">Rio de Janeiro</option>
+            <option value="mg">Minas Gerais</option>
+            <option value="outro">Outro</option>
+        </select><br><br>
+
+        <label for="cidade">Cidade:</label>
+        <input type="text" id="cidade" name="cidade" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" name="telefone" required><br><br>
+
+        <label for="areas_interesse">Áreas de Interesse:</label><br>
+            <input type="checkbox" id="informatica" name="areas_interesse" value="informatica">
+        <label for="informatica">Informática</label><br>
+            <input type="checkbox" id="engenharia" name="areas_interesse" value="engenharia">
+        <label for="engenharia">Engenharia</label><br>
+            <input type="checkbox" id="design" name="areas_interesse" value="design">
+        <label for="design">Design</label><br>
+
+        <label for="usuario">Nome de Usuário:</label>
+        <input type="text" id="usuario" name="usuario" required><br><br>
+
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha" required><br><br>
+
+        <input type="submit" value="Enviar Cadastro">
+    </form>
+      <script>
+        function mensagem() {
+            alert("Você garante que os dados são verdadeiros e que deseja enviar o cadastro?");
+        }
+    </script>
+
+    <h2>Para retornar a página inicial, clique <a href="atividade01.html">aqui</a>.</h2>
+</body>
+</html>
