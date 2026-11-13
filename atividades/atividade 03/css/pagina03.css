@@ -1,0 +1,82 @@
+body{
+    background-image: url("../imagens/wa.jpg");
+    background-size: cover;
+    width: 100%;
+    color: white;
+    background-repeat: no-repeat;
+}
+div{
+    background-color: rgba(85, 87, 86, 0.781);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 20px;
+    border-radius: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    /* text-align: center; */
+    transform: translate(-50%, -50%);
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+button{
+    background-color: rgb(85, 87, 86);
+    color: white;
+    border-radius: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(175, 169, 169, 0.616);
+    border: none;
+    margin: 0 auto;
+    display: block;
+    font-size: medium;
+}
+.pg3{
+    text-align:left;
+}
+input{
+    width: 100%;
+    border-radius: 40px;
+}
+.ent{
+    border-radius: 40px;
+    background-color:rgb(85, 87, 86); 
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    padding: 15px;
+    margin: 0 auto;
+    display: block;
+    box-shadow: 0 4px 8px rgba(175, 169, 169, 0.616);
+    width: auto;
+    text-align: center;
+}
+table, tr, td, th{
+   
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    padding: 5px;
+    border: 1px solid #fff;
+    border-collapse: collapse;
+}
+table{
+    border: 1px solid #fff;
+}
+ul, ol {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    padding: 20px;
+  
+}
+li{
+    border: 1px solid #fff;
+    border-radius: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    padding: 20px;
+}
+h1, h2{
+    text-align: center;
+}
