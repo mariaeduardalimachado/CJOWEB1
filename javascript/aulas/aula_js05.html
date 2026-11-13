@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="sb">
+        <p>
+            <label for="sb">Salário Bruto:(R$)</label>
+            <input type="number" name = "sb" id = "sb">
+        </p>
+        <p>
+            <label for="desc">Desconto:(%)</label>
+            <input type="number" name="desc" id = "desc">
+        </p>
+        <p>
+            <label for="sl">Salário Líquido: </label>
+            <input type="number" name="sl" id="sl" readonly>
+        </p>
+        <p>
+            <button type="button" onclick="calcular();">Calcular</button>
+        </p>
+    </form>
+<script>
+    function calcular(){
+        let sb = parseFloat(document.getElementById("sb").value);
+        let desc = parseFloat(document.getElementById("desc").value);
+
+        let sl = sb - (sb * desc / 100);
+
+        document.getElementById("sl").value = sl;
+
+        console.log(sb);
+    }
+</script>
+</body>
+</html>

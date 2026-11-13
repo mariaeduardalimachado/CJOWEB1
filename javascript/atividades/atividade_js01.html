@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <h1>Selecione a operação desejada: </h1>
+        <select name="opcao" id="op">
+            <option value="soma">Soma</option>
+            <option value="sub">Subtração</option>
+            <option value="mul">Multiplicação</option>
+            <option value="div">Divisão</option>
+        </select>
+        <p>
+            <label for="number">Informe o primeiro número: </label>
+            <input type="number" name="n1" id="n1">
+        </p>
+        <p>
+            <label for="number">Informe o segundo número: </label>
+            <input type="number" name="n2" id="n2">
+        </p>
+        <p>
+            <button type="button" onclick="calcular();">Calcular</button>
+        </p>
+        <p>
+            <label for="r">Resultado:</label>
+            <input type="number" name="r" id="r">
+        </p>
+    </form>
+    <script>
+        function calcular(){
+        let op = document.getElementById("op").value;
+        let n1 = parseFloat(document.getElementById("n1").value);
+        let n2 = parseFloat(document.getElementById("n2").value);
+          if(op == "soma"){
+           
+            r = n1 + n2;
+          } else if(op == "sub"){
+            
+            r = n1 - n2;
+          } else if(op == "mul"){
+            
+            r = n1 * n2;
+          } else if(op == "div"){
+             if(n2 == 0){
+                alert("Não é possível realizar divisão por 0. ")
+            } else{
+                r = n1 / n2;
+            }
+            
+          } 
+          document.getElementById("r").value = r;
+        }
+    </script>
+</body>
+</html>
